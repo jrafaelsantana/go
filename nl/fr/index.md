@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-01-25"
+lastupdated: "2017-06-20"
 
 ---
 
@@ -23,7 +23,7 @@ Le pack go_buildpack est utilisé si votre application contient un fichier nomm�
 ## Application de démarrage
 {: #starter_application}
 
-{{site.data.keyword.Bluemix}} propose une application de démarrage Go.  L'application de démarrage Go est une appli Go simple qui peut servir de modèle pour votre appli. Vous pouvez expérimenter cette application de démarrage et effectuer des modifications, puis les envoyer par commande push vers l'environnement Bluemix. Pour obtenir de l'aide sur son utilisation, voir [Utilisation des applications de démarrage](/docs/cfapps/starter_app_usage.html).
+{{site.data.keyword.Bluemix}} propose une application de démarrage Go.  Il s'agit d'une appli Go simple qui fournit un modèle que vous pouvez utiliser pour votre appli. Vous pouvez l'utiliser pour faire des essais, faire des modifications et les pousser vers l'environnement Bluemix. Consultez [Utilisation des applications de démarrage](/docs/cfapps/starter_app_usage.html) pour obtenir de l'aide sur l'application de démarrage.
 
 ## Versions d'environnement d'exécution
 {: #runtime_versions}
@@ -40,17 +40,19 @@ Vous pouvez spécifier la version de Go à utiliser par votre appli en définiss
 {: codeblock}
 Pour plus d'informations, voir [godep](https://github.com/tools/godep){: new_window}.
 
+Si aucune version n'est spécifiée, la version 1.7.5 est sélectionnée par défaut.
+
 ### Versions disponibles :
 {: #available_versions}
 
-Les versions de Go suivantes sont disponibles dans le [pack de construction Go](https://github.com/cloudfoundry/go-buildpack/releases/tag/v1.7.5){: new_window} qui est installé dans {{site.data.keyword.Bluemix}} :
+Les versions de Go suivantes sont disponibles dans le [pack de construction Go](https://github.com/cloudfoundry/go-buildpack/releases/tag/v1.7.18){: new_window} qui est installé dans {{site.data.keyword.Bluemix}} :
 
-* 1.4.2
-* 1.4.3
 * 1.5.3
 * 1.5.4
-* 1.6
-* 1.6.1
+* 1.6.3
+* 1.6.4
+* 1.7.4
+* 1.7.5
 
 Si votre application requiert une version de Go qui n'est pas répertoriée ci-dessus, vous pouvez utiliser le
 [pack de construction Go](https://github.com/cloudfoundry/go-buildpack.git){: new_window} externe pour déployer
