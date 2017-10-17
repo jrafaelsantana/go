@@ -10,11 +10,17 @@ Go
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    [スターター・アプリケーションの使用](../../cfapps/starter_app_usage.html)
     [プロキシーの処理](../../manageapps/workingWithProxy.html)
-    [コミュニティー・ビルドパックの使用](../../cfapps/byob.html)
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    {: .topicgroup}
+    スターター・アプリケーションおよびコミュニティー・ビルドパック
+        [スターター・アプリケーションの使用](../../cfapps/starter_app_usage.html)
+        [コミュニティー・ビルドパックの使用](../../cfapps/byob.html)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
+    [使用可能なバージョン](index.html/#runtime_versions)
     [ビルドパックのサポート・ステートメント](../../manageapps/buildpackSupport.html)
     {: .navgroup-end}

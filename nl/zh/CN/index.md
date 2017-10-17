@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-01-25"
+lastupdated: "2017-06-20"
 
 ---
 
@@ -39,19 +39,21 @@ lastupdated: "2017-01-25"
 {: codeblock}
 有关更多信息，请参阅 [godep](https://github.com/tools/godep){: new_window}。
 
+如果未指定版本，缺省情况下会选择 V1.7.5。
+
 ### 可用版本：
 {: #available_versions}
 
 {{site.data.keyword.Bluemix}} 中当前安装的
-[Go buildpack](https://github.com/cloudfoundry/go-buildpack/releases/tag/v1.7.5){: new_window} 内
+[Go buildpack](https://github.com/cloudfoundry/go-buildpack/releases/tag/v1.7.18){: new_window} 内
 提供了以下 Go 版本：
 
-* 1.4.2
-* 1.4.3
 * 1.5.3
 * 1.5.4
-* 1.6
-* 1.6.1
+* 1.6.3
+* 1.6.4
+* 1.7.4
+* 1.7.5
 
 如果您应用程序所需的 Go 版本没有列在上述列表中，那么可以使用外部 [Go buildpack](https://github.com/cloudfoundry/go-buildpack.git){: new_window} 来部署应用程序。
 

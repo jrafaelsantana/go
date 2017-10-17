@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-01-25"
+lastupdated: "2017-06-20"
 
 ---
 
@@ -39,17 +39,19 @@ go_buildpack 用於您的應用程式包含名為 *.go 的檔案的情況。
 {: codeblock}
 如需相關資訊，請參閱 [godep](https://github.com/tools/godep){: new_window}。
 
+如果未指定版本，依預設會選擇 1.7.5 版。
+
 ### 可用的版本：
 {: #available_versions}
 
-目前安裝在 {{site.data.keyword.Bluemix}} 中的 [Go 建置套件](https://github.com/cloudfoundry/go-buildpack/releases/tag/v1.7.5){: new_window}提供下列 Go 版本：
+目前安裝在 {{site.data.keyword.Bluemix}} 中的 [Go 建置套件](https://github.com/cloudfoundry/go-buildpack/releases/tag/v1.7.18){: new_window}提供下列 Go 版本：
 
-* 1.4.2
-* 1.4.3
 * 1.5.3
 * 1.5.4
-* 1.6
-* 1.6.1
+* 1.6.3
+* 1.6.4
+* 1.7.4
+* 1.7.5
 
 如果您的應用程式需要未列出的 Go 版本，則可以使用外部 [Go 建置套件](https://github.com/cloudfoundry/go-buildpack.git){: new_window}來部署該應用程式。
 
