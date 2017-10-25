@@ -21,6 +21,6 @@ Go
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    [Versioni disponibili](index.html/#runtime_versions)
+    [Versioni disponibili](index.html#runtime_versions)
     [Istruzione di supporto per il pacchetto di build](../../manageapps/buildpackSupport.html)
     {: .navgroup-end}
