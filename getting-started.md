@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-06"
+lastupdated: "2017-10-25"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2017-09-06"
 
 * {: download} Congratulations, you deployed a Hello World sample application on {{site.data.keyword.Bluemix}}!  To get started, follow this step-by-step guide. Or, <a class="xref" href="http://bluemix.net" target="_blank" title="(Download sample code)"><img class="hidden" src="../../images/btn_starter-code.svg" alt="Download application code" />download the sample code</a> and explore on your own.
 
-By following the Go getting started tutorial, you'll set up a development environment, deploy an app locally and on {{site.data.keyword.Bluemix}}, and integrate a {{site.data.keyword.Bluemix}} database service in your app.
+By following the Go getting started tutorial, you'll set up a development environment, deploy an app locally and on {{site.data.keyword.Bluemix}}, and integrate a {{site.data.keyword.Bluemix_notm}} database service in your app.
 
 ## Before you begin
 {: #prereqs}
@@ -118,7 +118,7 @@ Replace the *API-endpoint* in the command with an API endpoint from the followin
 | https://api.au-syd.bluemix.net | Sydney         |
 | https://api.eu-de.bluemix.net | Frankfurt     |
 
-Login to your {{site.data.keyword.Bluemix_notm}} account
+Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
   ```
 cf login
