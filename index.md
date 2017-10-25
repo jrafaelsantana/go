@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-06-20"
+lastupdated: "2017-10-25"
 
 ---
 
@@ -24,7 +24,7 @@ The go_buildpack is used if your application contains a file named *.go.
 ## Starter application
 {: #starter_application}
 
-{{site.data.keyword.Bluemix}} provides a Go starter application.  The Go starter application is a simple Go app that provides a template that you can use for your app. You can experiment with the starter app, and make and push changes to the Bluemix environment  See [Using the starter applications](/docs/cfapps/starter_app_usage.html) for help with using the starter application.
+{{site.data.keyword.Bluemix_notm}} provides a Go starter application.  The Go starter application is a simple Go app that provides a template that you can use for your app. You can experiment with the starter app, and make and push changes to the {{site.data.keyword.Bluemix_notm}} environment  See [Using the starter applications](/docs/cfapps/starter_app_usage.html) for help with using the starter application.
 
 ## Runtime versions
 {: #runtime_versions}
@@ -48,7 +48,7 @@ When a version is not specified, version 1.7.5 is chosen by default.
 
 The following Go versions are available in the
 [Go buildpack](https://github.com/cloudfoundry/go-buildpack/releases/tag/v1.7.18){: new_window}
-currently installed in {{site.data.keyword.Bluemix}}:
+currently installed in {{site.data.keyword.Bluemix_notm}}:
 
 * 1.5.3
 * 1.5.4
