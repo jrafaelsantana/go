@@ -21,6 +21,6 @@ Go
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    [可用版本](index.html/#runtime_versions)
+    [可用版本](index.html#runtime_versions)
     [Buildpack 支持语句](../../manageapps/buildpackSupport.html)
     {: .navgroup-end}

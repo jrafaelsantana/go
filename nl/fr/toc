@@ -21,6 +21,6 @@ Go
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    [Versions disponibles](index.html/#runtime_versions)
+    [Versions disponibles](index.html#runtime_versions)
     [Déclaration de prise en charge pour les packs de construction](../../manageapps/buildpackSupport.html)
     {: .navgroup-end}
