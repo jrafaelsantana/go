@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017
-lastupdated: "2017-06-20"
+  years: 2015, 2017, 2018
+lastupdated: "2018-03-17"
 
 ---
 
@@ -11,11 +11,11 @@ lastupdated: "2017-06-20"
 {:codeblock: .codeblock}
 
 
-# Ir
+# Go
 {: #go_runtime}
 
-O tempo de execução Go no {{site.data.keyword.Bluemix}} foi desenvolvido com o go_buildpack.
-O go_buildpack fornece um ambiente de tempo de execução completo para apps Go.
+O ambiente Go no {{site.data.keyword.Bluemix}} foi desenvolvido com o go_buildpack.
+O go_buildpack fornece um ambiente completo para apps em Go.
 {: shortdesc}
 
 O go_buildpack é usado se seu aplicativo contém um arquivo chamado *.go.
@@ -25,14 +25,12 @@ O go_buildpack é usado se seu aplicativo contém um arquivo chamado *.go.
 
 O {{site.data.keyword.Bluemix}} fornece um aplicativo iniciador do Go.  O aplicativo iniciador do Go é um app Go simples que fornece
 um modelo que você pode usar para seu app. É possível experimentar o app iniciador, fazendo e enviando mudanças por push para o ambiente
-Bluemix. Consulte [Usando os aplicativos iniciadores](/docs/cfapps/starter_app_usage.html) para obter ajuda sobre o uso do
-aplicativo iniciador.
+Bluemix. Consulte [Usando os aplicativos iniciadores](/docs/cfapps/starter_app_usage.html) para obter ajuda sobre o uso do aplicativo iniciador.
 
-## Versões de tempo de execução
+## Versões do ambiente
 {: #runtime_versions}
 
-É possível especificar a versão do Go a ser usada por seu app, configurando a propriedade GoVersion no arquivo
-Godeps/Godeps.json na raiz de seu aplicativo. Por exemplo:
+É possível especificar a versão do Go a ser usada por seu app, configurando a propriedade GoVersion no arquivo Godeps/Godeps.json na raiz de seu aplicativo. Por exemplo:
 
 ```
 {

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-06"
+lastupdated: "2018-03-17"
 
 ---
 
@@ -15,9 +15,9 @@ lastupdated: "2017-09-06"
 {:download: .download}
 {:app_name: data-hd-keyref="app_name"}
 
-# Tutorial Introdução
+# Tutorial de início rápido
 
-* {: download} Parabéns, você implementou um aplicativo de amostra Hello World no {{site.data.keyword.Bluemix}}!  Para iniciar, siga este guia passo a passo. Ou <a class="xref" href="http://bluemix.net" target="_blank" title="(Fazer download de código de amostra)"><img class="hidden" src="../../images/btn_starter-code.svg" alt="Fazer download de código do aplicativo" />faça download do código de amostra</a> e explore você mesmo.
+* {: download} Parabéns, você implementou um aplicativo de Hello World demonstrativo no {{site.data.keyword.Bluemix}}!  Para iniciar, siga este guia passo a passo. Ou <a class="xref" href="http://bluemix.net" target="_blank" title="(Fazer download de código de amostra)"><img class="hidden" src="../../images/btn_starter-code.svg" alt="Fazer download de código do aplicativo" />faça download do código de exemplo</a> e explore você mesmo.
 
 Seguindo o tutorial de introdução do Go, você configurará um ambiente de desenvolvimento, implementará um app localmente e no {{site.data.keyword.Bluemix}} e integrará um serviço de banco de dados {{site.data.keyword.Bluemix}} em seu app.
 
@@ -46,7 +46,7 @@ mkdir $GOPATH/src
 cd $GOPATH/src
 ```
 
-Agora você está pronto para começar a trabalhar com o app simples *hello world* de Go. Clone o repositório e mude para o diretório no qual o app de amostra está localizado.
+Agora você está pronto para começar a trabalhar com a aplicação de exemplo *hello world* em Go. Clone o repositório e mude para o diretório no qual o app de amostra está localizado.
 ```
 go get github.com/IBM-Bluemix/get-started-go
 ```
@@ -82,7 +82,7 @@ Use *Ctrl-c* para parar o app na mesma janela em que o app foi iniciado.
 ## Etapa 3: preparar o app para implementação
 {: #prepare}
 
-Para implementar no {{site.data.keyword.Bluemix_notm}}, poderá ser útil configurar um arquivo manifest.yml. O manifest.yml inclui informações básicas sobre seu app, como o nome, quanta memória alocar para cada instância e a rota. Nós fornecemos um arquivo manifest.yml de amostra no diretório `get-started-go`.
+Para implementar no {{site.data.keyword.Bluemix_notm}}, poderá ser útil configurar um arquivo manifest.yml. O manifest.yml inclui informações básicas sobre seu app, como o nome, quanta memória alocar para cada instância e a rota. Nós fornecemos um arquivo manifest.yml demonstrativo no diretório `get-started-go`.
 
 Abra o arquivo manifest.yml e mude o `nome` de `GetStartedGo` para o nome de seu app, <var class="keyword varname" data-hd-keyref="app_name">app_name</var>.
 {: download}
@@ -103,13 +103,13 @@ Nesse arquivo manifest.yml, **random-route: true** gera uma rota aleatória para
 {: #deploy}
 É possível usar a CLI do Cloud Foundry para implementar apps.
 
-Escolha seu terminal de API
+Escolha o endpoint da sua API
    ```
 cf api <API-endpoint>
    ```
    {: pre}
 
-Substitua o *API-endpoint* no comando por um terminal de API da lista a seguir.
+Substitua o *API-endpoint* no comando por algum endpoint de API da lista a seguir.
 
 |URL                             |Região          |
 |:-------------------------------|:---------------|
@@ -133,7 +133,7 @@ cf push
   ```
   {: pre}
 
-Isso pode levar um minuto. Se houver um erro no processo de implementação, será possível usar o comando `cf logs <Your-App-Name> --recent` para solucionar problemas.
+Isso pode levar um minuto. Se houver um erro no processo de implementação, será possível usar o comando `cf logs <Nome-Da-Aplicacao> --recent` para solucionar problemas.
 
 Quando a implementação for concluída, você deverá ver uma mensagem indicando que o app está em execução.  Visualize o app na URL listada na saída do comando push. Também é possível emitir o comando
 
@@ -146,12 +146,12 @@ para visualizar o status dos apps e ver a URL.
 ## Etapa 5: incluir um banco de dados
 {: #add_database}
 
-Em seguida, vamos incluir um banco de dados NoSQL nesse aplicativo e configurar o aplicativo para que ele possa ser executado localmente e no {{site.data.keyword.Bluemix_notm}}.
+Em seguida, vamos incluir um banco de dados NoSQL na aplicação e configurar para que ele possa ser executado localmente e no {{site.data.keyword.Bluemix_notm}}.
 
 1. Efetue login no {{site.data.keyword.Bluemix_notm}} em seu navegador. Procure o `Painel`. Selecione seu aplicativo clicando em seu nome na coluna `Nome`.
 2. Clique em `Conexões` e, em seguida, em `Conectar novo`.
-3. Na seção `Data & Analytics`, selecione `Cloudant NoSQL DB` e `Criar` o serviço.
-4. Selecione `Remontar` quando solicitado. O {{site.data.keyword.Bluemix_notm}} reiniciará o aplicativo e fornecerá as credenciais do banco de dados para ele usando a variável de ambiente `VCAP_SERVICES`. Essa variável de ambiente ficará disponível para o aplicativo somente quando ele estiver em execução no {{site.data.keyword.Bluemix_notm}}.
+3. Na seção `Data & Analytics`, selecione `Cloudant NoSQL DB` e em seguida `Criar`.
+4. Selecione `Remontar` quando solicitado. O {{site.data.keyword.Bluemix_notm}} reiniciará o aplicativo e fornecerá as credenciais do banco de dados para sua aplicação usando a variável de ambiente `VCAP_SERVICES`. Essa variável de ambiente ficará disponível para o aplicativo somente quando ele estiver em execução no {{site.data.keyword.Bluemix_notm}}.
 
 As variáveis de ambiente permitem separar as configurações de implementação do seu código-fonte. Por exemplo, em vez de codificar permanentemente uma senha do banco de dados, é possível armazená-la em uma variável de ambiente que seja referenciada em seu código-fonte. [Saiba mais...](/docs/manageapps/depapps.html#app_env)
 {: tip}
@@ -166,7 +166,7 @@ Vamos agora atualizar seu código local para apontar para esse banco de dados. C
   ```
   {: pre}
 
-2. De volta na UI do {{site.data.keyword.Bluemix_notm}}, selecione seu App -> Conexões -> Cloudant -> Visualizar credenciais
+2. De volta ao {{site.data.keyword.Bluemix_notm}}, selecione seu App -> Conexões -> Cloudant -> Visualizar Credenciais
 
 3. Copie e cole apenas a `URL` das credenciais no campo `CLOUDANT_URL` do arquivo `.env` e salve as mudanças.  O resultado será algo como:
   ```
